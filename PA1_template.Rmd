@@ -47,6 +47,8 @@ ggsave(filename="ttlStepsTakenEachDayPlot.png", height=4, width=4)
 
 ```
 
+![Histogram of total number of steps taken for each day](figures/ttlStepsTakenEachDayPlot.png)
+
 
 ## What is the average daily activity pattern?
 
@@ -70,6 +72,9 @@ ggplot(activityPattern, aes(interval,steps)) +
 ggsave(filename="timeSeriesStepIntrvlPlot.png", height=4, width=4)
 
 ```
+
+![Time series of the 5-minute interval and the average number of steps taken](figures/timeSeriesStepIntrvlPlot.png)
+
 
 
 ## Imputing missing values
@@ -110,6 +115,9 @@ ggsave(filename="imputedTtlStepsTakenEachDayPlot.png", height=4, width=4)
 
 ```
 
+![Histogram of total number of steps taken for each day (Imputed data values)](figures/imputedTtlStepsTakenEachDayPlot.png)
+
+
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
@@ -140,4 +148,6 @@ ggplot(dayTypeActivityPattern, aes(interval, steps),) +
 ggsave(filename="dayTypeActivityPatternPlot.png", height=4, width=4)
 
 ```
+
+![Time Series of 5-minute Intervaland Average Number of Steps Taken](figures/dayTypeActivityPatternPlot.png)
 
